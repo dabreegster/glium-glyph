@@ -176,7 +176,7 @@ fn to_vertex(
 
 pub struct GlyphBrush<'font, 'a, H: BuildHasher = DefaultSectionHasher> {
     glyph_brush: glyph_brush::GlyphBrush<'font, GlyphVertex, H>,
-    params: glium::DrawParameters<'a>,
+    pub params: glium::DrawParameters<'a>,
     program: Program,
     texture: Texture2d,
     index_buffer: glium::index::NoIndices,
